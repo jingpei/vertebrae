@@ -55,6 +55,9 @@ myTweet.set('message', 'Hello, world!');
  * http://backbonejs.org/#Model-get */
 
 // window.alert(YOUR CODE HERE);
+window.alert(myTweet.get('message'));
+
+
 
 /* - Backbone EVENTS ----------------------------------------------------------
  * Backbone gives us the ability to listen for events on our models,
@@ -83,9 +86,12 @@ myTweet.on('change',
     console.log(e);
 
     // Write code to log the changed attribute:
+
 // window.alert(YOUR CODE HERE);
+window.alert("this changed?");
   }
 );
+myTweet.set('message', 'Good-bye, cruel world!'); //This worked! It had to come after the event listener
 
 /* Backbone works through getters/setters. If you change something on
  * your model as if it were a plain old javascript object,
@@ -97,6 +103,7 @@ myTweet.on('change',
  * and write a one-liner that will make our `change` listener fire: */
 
 // myTweetYOUR CODE HERE;
+myTweet.set('message', 'nailed it! :D');
 
 /* Once you have the `change` event firing, move on to rendering! */
   </script>
